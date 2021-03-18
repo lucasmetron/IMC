@@ -9,10 +9,11 @@ body{
     background-color:  rgb(182,184,183);
 }
 .conteiner{
+    position: relative;
     width: 50%;
     margin: auto;
     padding: 15px;
-    box-sizing: border-box
+    box-sizing: content-box;
 ;
     
 }
@@ -226,4 +227,22 @@ label:hover{
 }
 
 
+/*                              MEDIA QUERY                                         */
+
+@media screen and (max-width: 630px){
+
+    .conteiner{
+        width: 70%;
+
+    }
+
+}
+
+@media screen and (max-width: 420px){
+
+    .conteiner{
+        width: 90%;
+    }
+
+}
 
