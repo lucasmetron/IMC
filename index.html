@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="conteiner">
+
+        <div class="header">
+            <h1>Calculadora IMC</h1>
+        </div>
+
+        <div class="calculadora">
+
+
+            <!-- <div class="calculadora"> -->
+
+
+
+            <form action="">
+                
+                <div id="radio" class="radios">
+                    <h3>Sexo</h3>
+                    <input type="radio" id="masculino" name="sexo" value="homem" checked>
+                    <label for="masculino"> Homem</label>
+
+                    <input type="radio" id="feminino" name="sexo" value="mulher">
+                    <label for="feminino"> Mulher</label>
+
+                </div>
+
+
+                <h3>Idade</h3>
+                <input id="idade" class="campos" type="number" name="idade" placeholder="Digite sua idade. ex: 24">
+
+                <h3>Altura</h3>
+                <input id="altura" class="campos" type="number" name="altura" step="0.01" max="2.5"
+                    placeholder="Digite sua altura. ex: 1.78">
+
+                <h3>Peso</h3>
+                <input id="peso" class="campos" type="number" step="1" name="peso"
+                    placeholder="Digite seu peso. ex: 75.8"><br>
+
+                <p class="bt yellow"  onclick="verificar()">Calcular</p>
+
+                <p class="bt black" onclick="window.location.reload()">Resetar</p>
+
+            </form>
+
+
+            <!-- </div> -->
+
+
+        </div>
+
+        <div id="resultad" class="resultado">
+
+            <!-- <div id="barraConteiner" class="conteinerBarra" >
+
+                <div class="dados">
+                    <p class="ponto0">IMC 0 </p>
+                    <p class="ponto100">IMC acima de 40</p>
+                </div>
+
+                <div  id="barraTamanho" class="barra">
+                </div>
+                
+            </div> -->
+        </div>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

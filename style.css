@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.conteiner{
+    width: 50%;
+    margin: auto;
+    
+}
+
+/*                       CORES                    */
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.black:hover{
+    background-color: red;
+}
+
+.yellow{
+    background-color: rgb(252, 252, 32);
+}
+
+.yellow:hover{
+    background-color: rgb(54, 240, 37);
+    color: white;
+}
+
+.red{
+    background-color: rgb(253, 31, 31);
+}
+
+.red:hover{
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+/*                                HEADER                       */
+
+/*                                CALCULADORA                       */
+
+form{
+    display: inline-block;
+}
+
+.calculadora{
+    display: flex;
+    margin: auto;
+    
+    padding: 20px;
+    width: 100%;
+    background-color: gray;
+    margin: auto;
+    justify-content: center;
+}
+
+.calculadora h1, h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.radios input[type="radio"]{
+    display: none;
+    width: 100%;
+}
+
+.radios label{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 20px 5px 20px;
+    font-family: Arial;
+    font-size: 1em;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    
+
+    transition-property: border, box-shadow;
+    transition-duration: 0.5s;
+
+}
+
+label:hover{
+    box-shadow: 2px 2px 4px yellow;
+}
+
+.radios input[type="radio"]:checked+label {
+    border: 2px solid yellow;
+    box-shadow: 2px 2px 4px yellow;
+  }
+  
+
+  .campos {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 3px yellow;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+
+
+.campos:hover {
+    border: yellow ;
+    box-shadow: 3px 3px 4px yellow;
+    
+}
+
+.bt{
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+
+    transition-property: box-shadow, background-color;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    
+}
+
+.bt:hover{
+    box-shadow: 3px 3px rgb(51, 50, 50, 0.5);
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*                              BARRA ANIMAÇÃO                                         */
+
+@keyframes barraMagreza{
+    from{background-color: rgb(15, 15, 15);width: 0%;}
+    to{background-color: rgb(253, 30, 0);width:20%}
+}
+
+@keyframes barraNormal{
+    from{background-color: rgb(253, 10, 10);width: 0%;}
+    to{background-color: rgb(54, 240, 37);width:50%}
+}
+
+@keyframes barraSobrePeso{
+    from{background-color: rgb(253, 10, 10);width: 0%;}
+    to{background-color: rgb(253, 194, 1);width:75%}
+}
+
+@keyframes barraObesidade{
+    from{background-color: rgb(15, 15, 15);width: 0%;}
+    to{background-color: rgb(247, 9, 9);width:100%}
+}
+
+.conteinerBarra{
+    display: none;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra{
+    position: absolute;
+    left: 0;
+    transform: translateY(150%);
+   
+    width: 10px;
+    height: 15Px;
+    border-radius: 0px 100px 100px 0px;
+
+    animation-name: barraMagreza;
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.dados{
+    
+    width: 100%;
+    position: relative;
+}
+
+.ponto0{
+    
+}
+
+.ponto100{
+    position: absolute;
+    right: 0;
+    transform: translateY(-100%);
+    
+    
+}
+
+
+
