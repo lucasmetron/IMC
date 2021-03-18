@@ -2,35 +2,47 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
+   
+}
+
+body{
+    background-color:  rgb(182,184,183);
 }
 .conteiner{
     width: 50%;
     margin: auto;
+    padding: 15px;
+    box-sizing: border-box
+;
     
 }
 
 /*                       CORES                    */
 
 .black{
-    background-color: black;
+    background-color: rgb(250,107,49);
     color: white;
 }
 
 .black:hover{
-    background-color: red;
+    background-color: rgb(255, 87, 21);
 }
 
 .yellow{
-    background-color: rgb(252, 252, 32);
+    background-color: rgb(255,234,129);
 }
 
 .yellow:hover{
-    background-color: rgb(54, 240, 37);
+    background-color: rgb(169,200,156);
     color: white;
 }
 
 .red{
-    background-color: rgb(253, 31, 31);
+    background-color: rgb(250, 72, 49);
+}
+
+.opacidade{
+    background-color: rgb(250, 72, 49, 0.6);
 }
 
 .red:hover{
@@ -40,21 +52,30 @@
 
 /*                                HEADER                       */
 
+.titulo{
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(226, 226, 226, 0.87);
+    
+}
 /*                                CALCULADORA                       */
 
 form{
     display: inline-block;
+    padding: 15px;
 }
 
 .calculadora{
+    background-color: rgba(226, 226, 226, 0.87);
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
-    
-    padding: 20px;
     width: 100%;
-    background-color: gray;
     margin: auto;
     justify-content: center;
+    padding: 15px;
+   
 }
 
 .calculadora h1, h3{
@@ -83,12 +104,12 @@ form{
 }
 
 label:hover{
-    box-shadow: 2px 2px 4px yellow;
+    box-shadow: 2px 2px 4px black;
 }
 
 .radios input[type="radio"]:checked+label {
-    border: 2px solid yellow;
-    box-shadow: 2px 2px 4px yellow;
+    border: 2px solid black;;
+    box-shadow: 2px 2px 4px black;;
   }
   
 
@@ -96,7 +117,7 @@ label:hover{
     width: 100%;
     padding: 10px;
     outline: 0;
-    border: 3px yellow;
+    border: 3px rgb(255,234,129);
     transition-property: box-shadow;
     transition-duration: 0.5s;
     cursor: pointer;
@@ -104,8 +125,8 @@ label:hover{
 
 
 .campos:hover {
-    border: yellow ;
-    box-shadow: 3px 3px 4px yellow;
+    border: black; ;
+    box-shadow: 3px 3px 4px black;;
     
 }
 
@@ -115,6 +136,8 @@ label:hover{
     width: 100%;
     padding: 10px;
     margin-top: 15px;
+    margin-bottom: 7.5px;
+    font-weight: 900;
 
     transition-property: box-shadow, background-color;
     transition-duration: 0.5s;
@@ -127,12 +150,13 @@ label:hover{
 }
 
 .resultado{
+    background-color: rgba(226, 226, 226, 0.87);
     display: flex;
     flex-direction: column;
-    padding: 15px;
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 
 
@@ -140,22 +164,22 @@ label:hover{
 
 @keyframes barraMagreza{
     from{background-color: rgb(15, 15, 15);width: 0%;}
-    to{background-color: rgb(253, 30, 0);width:20%}
+    to{background-color: rgb(250,72,49);width:20%}
 }
 
 @keyframes barraNormal{
     from{background-color: rgb(253, 10, 10);width: 0%;}
-    to{background-color: rgb(54, 240, 37);width:50%}
+    to{background-color: rgb(101, 207, 91);width:50%}
 }
 
 @keyframes barraSobrePeso{
-    from{background-color: rgb(253, 10, 10);width: 0%;}
+    from{background-color: rgb(250,72,49);width: 0%;}
     to{background-color: rgb(253, 194, 1);width:75%}
 }
 
 @keyframes barraObesidade{
     from{background-color: rgb(15, 15, 15);width: 0%;}
-    to{background-color: rgb(247, 9, 9);width:100%}
+    to{background-color: rgb(250,72,49);width:99%}
 }
 
 .conteinerBarra{
