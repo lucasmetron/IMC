@@ -1,6 +1,6 @@
 # Calculadora IMC
 
-### - Após terminar os módulos de JavaScript básico e intermediário. Antes de entrar no módulo de JavScript Avançado decidi fazer uma exercício para praticar a manipulação do DOM através do JavaScript. Após alguns minutos pensando sobre o assunto, decidi fazer uma calculadora de IMC bem "clean".
+### - Após terminar os módulos de JavaScript básico, intermediário e antes de entrar no módulo avançado, pensei em fazer um exercício para praticar a manipulação do DOM através do JavaScript. Após alguns minutos pensando sobre o assunto, decidi fazer uma calculadora de Índice de massa corporal (IMC) bem "clean".
 
 ### - Espero que gostem do resultado. Se tiverem dicas estou aberto a sugestões HeHeHe
  
