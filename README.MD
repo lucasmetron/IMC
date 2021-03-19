@@ -17,7 +17,7 @@
 ### Front End para celular
 ![Tela mobile](./gifs/mobile.gif)
 
-### Acesse o site e veja você mesmo! Link: https://loving-stonebraker-57df44.netlify.app/
+### Acesse o site e veja você mesmo! Link: https://imccalc.netlify.app
 
 
 ### Gostou do meu projeto? :D Entre em contato comigo! 
